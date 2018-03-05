@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1CA91A2CB3891F0F1C2980DE /* libPods-A.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 87AD74FE7CA84F6B8FF671DF /* libPods-A.a */; };
 		7450D3E920492BCA004F4727 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7450D3E820492BCA004F4727 /* AppDelegate.swift */; };
 		7450D3EB20492BCA004F4727 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7450D3EA20492BCA004F4727 /* ViewController.swift */; };
 		7450D3EE20492BCA004F4727 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7450D3EC20492BCA004F4727 /* Main.storyboard */; };
@@ -14,6 +15,8 @@
 		7450D3F320492BCA004F4727 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7450D3F120492BCA004F4727 /* LaunchScreen.storyboard */; };
 		7450D3FE20492BCA004F4727 /* ATests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7450D3FD20492BCA004F4727 /* ATests.swift */; };
 		7450D40920492BCA004F4727 /* AUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7450D40820492BCA004F4727 /* AUITests.swift */; };
+		7450D45B20493E0F004F4727 /* Target_A.m in Sources */ = {isa = PBXBuildFile; fileRef = 7450D45A20493E0F004F4727 /* Target_A.m */; };
+		7450D45F20493ECD004F4727 /* AViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7450D45D20493ECD004F4727 /* AViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,14 @@
 		7450D40420492BCA004F4727 /* AUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7450D40820492BCA004F4727 /* AUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AUITests.swift; sourceTree = "<group>"; };
 		7450D40A20492BCA004F4727 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7450D45820493E0F004F4727 /* A-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "A-Bridging-Header.h"; sourceTree = "<group>"; };
+		7450D45920493E0F004F4727 /* Target_A.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Target_A.h; sourceTree = "<group>"; };
+		7450D45A20493E0F004F4727 /* Target_A.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Target_A.m; sourceTree = "<group>"; };
+		7450D45D20493ECD004F4727 /* AViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AViewController.m; sourceTree = "<group>"; };
+		7450D45E20493ECD004F4727 /* AViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AViewController.h; sourceTree = "<group>"; };
+		87AD74FE7CA84F6B8FF671DF /* libPods-A.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-A.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A11D58C2E5383AFF85277480 /* Pods-A.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-A.release.xcconfig"; path = "Pods/Target Support Files/Pods-A/Pods-A.release.xcconfig"; sourceTree = "<group>"; };
+		CE1EAA181E53797D643B1917 /* Pods-A.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-A.debug.xcconfig"; path = "Pods/Target Support Files/Pods-A/Pods-A.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CA91A2CB3891F0F1C2980DE /* libPods-A.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +93,8 @@
 				7450D3FC20492BCA004F4727 /* ATests */,
 				7450D40720492BCA004F4727 /* AUITests */,
 				7450D3E620492BCA004F4727 /* Products */,
+				BEA0989A82D4428EA8D65872 /* Pods */,
+				F2D4694C45C85295FEDD0D2D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,6 +111,8 @@
 		7450D3E720492BCA004F4727 /* A */ = {
 			isa = PBXGroup;
 			children = (
+				7450D45C20493ECD004F4727 /* A */,
+				7450D45520493D6B004F4727 /* Targets */,
 				7450D3E820492BCA004F4727 /* AppDelegate.swift */,
 				7450D3EA20492BCA004F4727 /* ViewController.swift */,
 				7450D3EC20492BCA004F4727 /* Main.storyboard */,
@@ -125,6 +141,42 @@
 			path = AUITests;
 			sourceTree = "<group>";
 		};
+		7450D45520493D6B004F4727 /* Targets */ = {
+			isa = PBXGroup;
+			children = (
+				7450D45920493E0F004F4727 /* Target_A.h */,
+				7450D45A20493E0F004F4727 /* Target_A.m */,
+				7450D45820493E0F004F4727 /* A-Bridging-Header.h */,
+			);
+			path = Targets;
+			sourceTree = "<group>";
+		};
+		7450D45C20493ECD004F4727 /* A */ = {
+			isa = PBXGroup;
+			children = (
+				7450D45E20493ECD004F4727 /* AViewController.h */,
+				7450D45D20493ECD004F4727 /* AViewController.m */,
+			);
+			path = A;
+			sourceTree = "<group>";
+		};
+		BEA0989A82D4428EA8D65872 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CE1EAA181E53797D643B1917 /* Pods-A.debug.xcconfig */,
+				A11D58C2E5383AFF85277480 /* Pods-A.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F2D4694C45C85295FEDD0D2D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				87AD74FE7CA84F6B8FF671DF /* libPods-A.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +184,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7450D40D20492BCA004F4727 /* Build configuration list for PBXNativeTarget "A" */;
 			buildPhases = (
+				FC01D993709F1E174BD1CD67 /* [CP] Check Pods Manifest.lock */,
 				7450D3E120492BCA004F4727 /* Sources */,
 				7450D3E220492BCA004F4727 /* Frameworks */,
 				7450D3E320492BCA004F4727 /* Resources */,
+				E18A6CECA6146A1772B84C18 /* [CP] Embed Pods Frameworks */,
+				EF98FA54C16C0142CB35592C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -193,6 +248,7 @@
 				TargetAttributes = {
 					7450D3E420492BCA004F4727 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 					7450D3F820492BCA004F4727 = {
@@ -254,12 +310,65 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		E18A6CECA6146A1772B84C18 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-A/Pods-A-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF98FA54C16C0142CB35592C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-A/Pods-A-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FC01D993709F1E174BD1CD67 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-A-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7450D3E120492BCA004F4727 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7450D45F20493ECD004F4727 /* AViewController.m in Sources */,
 				7450D3EB20492BCA004F4727 /* ViewController.swift in Sources */,
+				7450D45B20493E0F004F4727 /* Target_A.m in Sources */,
 				7450D3E920492BCA004F4727 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -424,13 +533,17 @@
 		};
 		7450D40E20492BCA004F4727 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE1EAA181E53797D643B1917 /* Pods-A.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = A/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.arceshi.cc.A;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "A/Targets/A-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -438,13 +551,16 @@
 		};
 		7450D40F20492BCA004F4727 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A11D58C2E5383AFF85277480 /* Pods-A.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = A/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.arceshi.cc.A;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "A/Targets/A-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
